@@ -6,6 +6,7 @@ import CardCeramica from "./components/tablas";
 import CardLaminas from "./components/tablasLaminas";
 import CardLaminasPVC from "./components/tablasPVC";
 import { CardVigas } from "./components/vigas";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function Home() {
       <CardLaminas />
       <CardLaminasPVC />
       <CardVigas />
+      <Analytics />
     </main>
   );
 }
